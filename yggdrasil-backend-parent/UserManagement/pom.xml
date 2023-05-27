@@ -4,12 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>be.lesgoblins</groupId>
-    <artifactId>yggdrasil</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-
+    <artifactId>UserManagement</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -17,7 +12,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <modules>
-        <module>yggdrasil-backend-parent</module>
-    </modules>
+    <parent>
+        <artifactId>yggdrasil-backend-parent</artifactId>
+        <groupId>be.lesgoblins</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 </project>
